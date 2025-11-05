@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacts </title>
+    <link rel="stylesheet" href="Styles/Desktop.css">
+    <link rel="stylesheet" href="Styles/Mobile.css" media="screen and (max-width: 768px)">
+    <link rel = "icon" type ="images/png" href="Images/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div class="JWVHeaderContainer">
+          <div class="JWVHeaderImgSection">
+            <img src="Images/LogoBanner.svg" width="100" height="auto" alt="Logo">
+          </div>
+          <div class="HeaderDetailSection">
+            <nav class="JW-NavBar">
+              <ul>
+                <li><a href="index.html"><span class="material-symbols-outlined">home</span>Home</a></li>
+                <li><a href="AboutUs.html"><span class="material-symbols-outlined">Person</span>About us</a></li>
+                <li><a href="Portfolio.html"><span class="material-symbols-outlined">view_carousel</span>Portfolio</a></li>
+                <li><a href="Service.html"><span class="material-symbols-outlined">handshake</span>Service</a></li>
+                <li><a href="Contacts.html"><span class="material-symbols-outlined">mail</span>Contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+<h1 class ="JWVContactHeading"> JazzWorks Visual Contact Form </h1>
+
+<form action="https://formspree.io/f/mpwdezep" method ="POST"> 
+  <!--Since this is a personal project, I wanted to delve into using the world of web apis and wanted to try formspree-->
+
+  <input type="text" name="First Name" placeholder="First Name" autocomplete="off" required>
+  <input type="text" name="Last Name" placeholder="Last Name" autocomplete="off" required>
+  <input type="email" name="User Email" placeholder="Email Address" autocomplete="off" required>
+  <textarea rows="5" cols="60" name="Their Message" placeholder="Enter your message" autocomplete="off" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+</body>
+</html>
