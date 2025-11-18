@@ -296,6 +296,7 @@ a.Portfolio-Box { /*To remove link effect*/
 .JWVImgSlider img
 {
    width: 68%;
+   object-fit: contain; /*Adding this to keep image size controlled*/
 
    animation: fade linear;
    animation-timeline:view();
